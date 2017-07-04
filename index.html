@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script type="text/javascript" src="js/fontsize.js"></script>
+    <link rel="stylesheet" href="js/css/swiper.min.css">
+    <link rel="stylesheet" href="CSS/mystyle.css">
+    <link rel="stylesheet" href="CSS/er.css">
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="zong">
+        <p class="jian jian-nai">个人简历</p>
+        <img src="images/icon_up.png" class="biao biao-ani">
+        <img src="images/music.png" class="music music-ani">
+        <audio src="video/告白气球.mp3" autoplay class="audio-my" loop></audio>
+    </div>
+    <!--第一张-->
+    <div class="zi down">
+        <p class="jianli jian-nai">个人简历</p>
+        <div class="dong">
+        <h2 class="xing left-nai">姓名：王瑞</h2>
+        <h2 class="xue left-nai2">所在学校：盛邦升华</h2>
+        <h2 class="xue left-nai3">所学专业：Web前端</h2>
+        <h2 class="xue left-nai4">所在班级：R2110</h2>
+        </div>
+        <img src="images/icon_up.png" class="biao biao-ani">
+        <img src="images/music.png" class="music music-ani">
+        <audio src="video/告白气球.mp3" autoplay class="audio-my" loop></audio>
+    </div>
+    <div class="si down">
+        <p class="jianli jian-nai">个人简历</p>
+
+        <h2 class="web">Me</h2>
+
+        <div class="shu jian-nai">
+            <p class="nei">我来自唐山，滦县，一个古城镇 </p>
+
+            <p class="ner-list">我的爱好是听歌，读书，偶尔写写字，还有运动，
+                <span class="span3">喜欢绿色，因为绿色代表着希望</span>
+            </p>
+
+            <p class="ner-list"> 现在我在学习Web前端，我将努力学习一切知识，在不久的将来，
+                希望成为一名优秀的Web前端工程师。 </p>
+
+            <p class="ner-list">我喜欢的一句话是：&nbsp;得之坦然，失之淡然，争之必然，顺其自然。
+            </p>
+
+            <p class="ner-list">我认为人生充满偶然，谁也不知道下一秒会发生什么。</p>
+        </div>
+        <img src="images/icon_up.png" class="biao biao-ani">
+        <img src="images/music.png" class="music music-ani">
+        <audio src="video/告白气球.mp3" autoplay class="audio-my" loop></audio>
+    </div>
+    <div class="san down">
+        <p class="jianli">个人简历</p>
+
+        <h2 class="web web-nai">Web</h2>
+
+        <div class="shu shu-nai">
+            <p class="nei">在2016年5月21日，我来到了盛邦升华，开始了我的的大学之旅。</p>
+
+            <p class="ner-list">学习了两个季度，分别是：
+                <span class="span1">第一学期，第二学期。</span></p>
+
+            <p class="ner-list">第一学期：&nbsp;
+                我们学习了 <span class="span2">HTML、CSS、jQuery</span></p>
+
+            <p class="ner-list">第二学期：&nbsp;
+                我们学习了 <span class="span2">html5、JavaSpript、Swiper、Zepto、<br/>
+                    微场景，媒介查询、...</span></p>
+        </div>
+        <h6>革故鼎新</h6>
+        <h6>与众不同</h6>
+        <img src="images/icon_up.png" class="biao biao-ani">
+        <img src="images/music.png" class="music music-ani">
+        <audio src="video/告白气球.mp3" autoplay class="audio-my" loop></audio>
+    </div>
+    <div class="wu down">
+        <img src="images/icon_up.png" class="biao biao-ani">
+        <p class="jianli jian-nai">个人简历</p>
+        <h2 class="web">Web</h2>
+        <p class="xie xie-nai">谢谢大家</p>
+        <img src="images/music.png" class="music music-ani">
+        <audio src="video/告白气球.mp3" autoplay class="audio-my" loop></audio>
+    </div>
+    <!--最后一张-->
+</div>
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/touch.js"></script>
+<script>
+    var i=0;
+    $(".container").swipeUp(function(){
+        if(i<4)
+        {
+            $(".container>div").eq(i).addClass("up");
+            $(".container>div").eq(i).children().addClass("yin");
+            i++;
+            $(".container>div").eq(i).removeClass("down");
+            $(".container>div").eq(i).children().removeClass("yin");
+        }
+    })
+    $(".container").swipeDown(function(){
+        if(i>0)
+        {
+            $(".container>div").eq(i).addClass("down");
+            $(".container>div").eq(i).children().addClass("yin");
+            i--;
+            $(".container>div").eq(i).removeClass("up");
+            $(".container>div").eq(i).children().removeClass("yin");
+        }
+    })
+    flag=0;
+    $(".container .music").tap(function(){
+
+        if( document.querySelector(".audio-my").paused==true)
+        {
+            document.querySelector(".audio-my").play();
+            $(".music").addClass("music-ani");
+        }
+        else{
+            document.querySelector(".audio-my").pause();
+            $(".music").removeClass("music-ani");
+        }
+    })
+</script>
+</html>

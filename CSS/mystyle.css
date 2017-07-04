@@ -1,0 +1,89 @@
+/*@charset "utf-8";*/
+html,body{width:100%;height:100%;font-size:6.4rem;}
+*{margin:0;padding:0;}
+
+.container{width:100%;height:100%;background:#fff;overflow: hidden;position:relative;}
+.container>div{width:100%;height:100%;position:absolute;top:0;left:0;}
+.zong,.zi,.san,.si,.wu{background-image:url("../images/beijig.jpg");background-size:100% 100%;width:100%;height:100%;
+    position:absolute;top:0;left:0;
+    transform-origin:50% 50%;
+    perspective:800px;}
+@font-face {
+    font-family: wrfont;
+    src:url(../fonts/xindexingcao57.ttf);
+}
+.jian{ font-family: wrfont;font-size:1.6rem;color:#000;padding-top:1.63rem;width:1rem;
+    padding-left:2.3rem;}
+/*第一张结束*/
+@font-face {
+    font-family: wrfont2;
+    src:url(../fonts/xindexingcao57.ttf);
+}
+.jianli{font-family: wrfont2;font-size:1rem;color:#000;padding-top:1.63rem;width:100%;
+    padding-left:1.3rem;}
+.xing{font:0.5rem "宋体";padding-top:3rem;padding-left:1rem;}
+.xue{font:0.5rem "宋体";padding-top:0.5rem;padding-left:1rem;}
+/*第二张结束*/
+.san{position:relative;}
+@font-face {
+    font-family: selima;
+    src:url("../字体/Font/selima/selima_.otf");
+}
+.web{font-family:selima;font-size:5rem;padding-top:0.8rem;width:100%;
+    background:linear-gradient(to top left,#dddddd 35%,white 10%,#c7ddef);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+.shu{width:80%;margin:10%;position: absolute;top:3.5rem;}
+.shu p{font:0.3rem "宋体";color:#3c4046;line-height:135%;}
+.ner-list{padding-top:0.3rem;}
+.span1{float:left;width:100%;}
+.span2{font-weight:bold;}
+h6{font:0.3rem "宋体";color:#000;padding-top:1rem;padding-left:1.3rem;float:left;}
+.biao{width:0.39rem;height:0.25rem;position:absolute;bottom:0.35rem;left:45%;}
+.xie{font:1rem "宋体";width:0.1rem;color:#818181;position:absolute;top:35%;left:40%;}
+.music{width:0.6rem;height:0.6rem;position:fixed;top:0.3rem;right:0.3rem;}
+
+
+
+.yin{display: none;}
+.xian{display: block;}
+
+
+.container>div{transition:transform 0.5s linear;}
+.up{transform: translateY(-100%);}
+.down{transform: translateY(100%);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

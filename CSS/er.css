@@ -1,0 +1,60 @@
+.biao-ani{animation:biao-k 1s linear infinite;}
+@keyframes biao-k {
+    0%{transform: translateY(-0.2rem);}
+    100%{transform: translateY(0rem);}
+}
+
+.jian-nai{animation:jian-k 2s ease-out;}
+@keyframes jian-k {
+    0%{transform: scale(0.1);}
+    100%{transform:  scale(1);}
+}
+.left-nai{animation:left-k 2s ease-out;}
+@keyframes left-k {
+    0%{transform: translate(-100px);opacity: 0;}
+    100%{transform:  translate(0);opacity: 1;}
+}
+.left-nai2{animation:left-k 2.8s ease-out;}
+@keyframes left-k {
+    0%{transform: translate(-100px);opacity: 0;}
+    100%{transform:  translate(0);opacity: 1;}
+}
+.left-nai3{animation:left-k 4.5s ease-out;}
+@keyframes left-k {
+    0%{transform: translate(-100px);opacity: 0;}
+    100%{transform:  translate(0);opacity: 1;}
+}
+.left-nai4{animation:left-k 6s ease-out;}
+@keyframes left-k {
+    0%{transform: translate(-200px);opacity: 0;}
+    100%{transform:  translate(0);opacity: 1;}
+}
+
+.xie-nai{animation:xie-k 2s ease-out;}
+@keyframes xie-k {
+    0%{transform: scale(0);}
+    100%{transform:  scale(1);}
+}
+.music-ani{animation:misic-k 5s linear infinite;}
+@keyframes misic-k {
+    0%{transform:rotateZ(0deg);}
+    100%{transform:rotateZ(360deg);}
+}
+.shu-nai{animation:shu-k 2s ease-out;}
+@keyframes shu-k {
+    0%{transform: scale(0.8);}
+    50%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+.web-nai{animation:web-k 3s ease-out;}
+@keyframes web-k {
+    0%{transform: rotateY(360deg);}
+    100%{transform: rotateY(0deg);}
+}
+
+
+
+
+
+
+
